@@ -1,10 +1,24 @@
 # Automated Computer Setup
 
-Everything I collect about setting up computers automatically.
+Automated Development Computer setup
 
-Collected files can be found within the "Source" directory.
+## Windows 10 unattended installation setup
 
-This collection contains: 
-  - [x] Windows 10 Pro unattendet.txt's for BIOS and UEFI which you can place in the root directory of an USB stick created by the media creator to do an automated unattended install of win 10 Pro
+Unattended installation files for windows setup (XML).
+Put this as autounattend.xml into the root folder of your windows 10 pro usb stick
+to perform an automated unattended installation. 
 
-  
+Change the files as needed.
+
+## Base dev computer
+
+  - open an administrative cmd 
+  - one line at a time enter those :
+```
+  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+  choco install git visualstudiocode powershell-core firefox
+  git config --global user.name "<Your name>"
+  git config --global user.email <your email address>
+``` 
+
