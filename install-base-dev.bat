@@ -1,3 +1,3 @@
-@"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile     -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.    Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET     "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco install git visualstudiocode powershell-core firefox
