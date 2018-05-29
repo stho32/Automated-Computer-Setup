@@ -22,3 +22,9 @@ Change the files as needed.
   git config --global user.email <your email address>
 ``` 
 
+### Second try should be something like that:
+
+```
+  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://<github-link to install-base-dev.bat>'))"
+```
+
