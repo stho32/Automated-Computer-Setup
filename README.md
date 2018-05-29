@@ -25,6 +25,6 @@ Change the files as needed.
 ### Second try should be something like that:
 
 ```
-  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/stho32/Automated-Computer-Setup/master/install-base-dev.bat'))"
+  @"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/stho32/Automated-Computer-Setup/master/install-base-dev.bat'))"
 ```
 
