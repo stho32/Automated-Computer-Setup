@@ -3,5 +3,5 @@
 Automated Development Computer setup
 
   - [Windows 10](Windows-10.md)
-  - [XUbuntu](Xubuntu-Dev.md)
+  - [XUbuntu](XUbuntu-Dev.md)
 
