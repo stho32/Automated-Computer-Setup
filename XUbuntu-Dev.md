@@ -16,3 +16,8 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install code # or code-insiders
 ```
+
+  - Sass
+```
+sudo apt-get install ruby-sass
+```
